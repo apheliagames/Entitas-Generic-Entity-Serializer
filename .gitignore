@@ -1,0 +1,42 @@
+# =============== #
+# Unity generated #
+# =============== #
+[Tt]emp/
+[Oo]bj/
+[Ll]ibrary/
+[Bb]uild/
+Jenny/*
+Jenny-Server.bat
+Jenny-Auto-Import.bat
+Jenny-Auto-Import
+Jenny-Server
+Jenny.*
+Build/*
+Builds/*
+sysinfo.txt
+
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+[Ee]xported[Oo]bj/
+/*.userprefs
+/*.csproj
+/*.pidb
+/*.suo
+/*.sln*
+/*.user
+/*.unityproj
+/*.booproj
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store*
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+[Tt]humbs.db
+Jenny Server.lnk
