@@ -8,7 +8,8 @@ All components, that is not opted out for serialization (via [DontPersistCompone
 The Deserialization methods(Json or EntityDocument as input) returning a Dictionary(int, IComponent) object, where the int key is the index of any component from the Componentpool of a context.
 So you can easily recreate all saved Components in just a single iteration using the generic AddComponent(index, Icomponent) or ReplaceComponent methods from an Entity object.
 
-One of the main adavantages of using this serializer is, that all components are getting serialized separately in Component objects instead of a single Container class keeping all components.
+One of the main adavantages of using this serializer is, that all components are getting serialized separately in Component objects instead of a single container class keeping all components. This can be done via so called BsonExtraElements to store dynamic data in a BsonDocument. See more info about it here: https://mongodb.github.io/mongo-csharp-driver/2.4/examples/mixing_static_and_dynamic/
+
 This makes it possible to react with subscription protocols like DDP on every change on a single Component in the database, which saves a lot of network traffic to clients.
 
 See the SerializerTest script for better explaination, how it has to be used.
