@@ -5,9 +5,9 @@ namespace Entitas.Plugins.EntitySerializer
 {
     public class EntityDocument
     {
-        [BsonId][BsonRepresentation(BsonType.String)][IgnoreComponent]
-        public ObjectId _id;
-        [IgnoreComponent]
+        [BsonId]
+        [BsonRepresentation(BsonType.String)]
+        public ObjectId _id;        
         public string userID;
         [BsonExtraElements]
         public BsonDocument entityData;

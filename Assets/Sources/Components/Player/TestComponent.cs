@@ -1,6 +1,6 @@
 ﻿using Entitas;
 
-[Player][DontPersistComponent]
+[Player][Stored]
 public class TestComponent : IComponent
 {
 

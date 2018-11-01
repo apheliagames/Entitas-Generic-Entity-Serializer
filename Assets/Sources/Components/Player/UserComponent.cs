@@ -1,7 +1,7 @@
 ﻿using Entitas;
 using Entitas.CodeGeneration.Attributes;
 
-[Player]
+[Player][Stored]
 public class UserComponent : IComponent
 {
     public string userID;

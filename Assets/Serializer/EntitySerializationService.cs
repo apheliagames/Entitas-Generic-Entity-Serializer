@@ -20,7 +20,7 @@ namespace Entitas.Plugins.EntitySerializer
 
             foreach (IComponent _component in entity.GetComponents())
             {
-                if (!_component.GetType().IsDefined(typeof(DontPersistComponent), false))
+                if (_component.GetType().IsDefined(typeof(StoredAttribute), false))
                     _entityDocument.entityData.Add(new BsonElement(_component.GetType().Name.RemoveComponentSuffix(), _component.ToBsonDocument(_component.GetType())));
             }
             return _entityDocument;
